@@ -10,3 +10,9 @@
 # Outputs:
 # "the number is an integer"
 # "the number is not an integer"
+
+n = float(input("Input number\n"))
+if n % 1 == 0:
+    print("the number is an integer")
+else:
+    print("the number is not an integer")

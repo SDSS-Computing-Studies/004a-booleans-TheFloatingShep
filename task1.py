@@ -11,3 +11,11 @@
 # "The number is larger than 100"
 # "The number is smaller than 100"
 # "The number is 100"
+
+n = int(input("Enter number\n"))
+if n > 100:
+    print("The number is larger than 100")
+elif n < 100:
+    print("The number is smaller than 100")
+elif n == 100:
+    print("The number is 100")
