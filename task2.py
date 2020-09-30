@@ -11,7 +11,7 @@
 # - "negative"
 # - "zero"
 
-n = int(input("Enter number\n"))
+n = float(input("Enter number\n"))
 if n > 0:
     print("positive")
 elif n < 0:
