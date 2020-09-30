@@ -17,8 +17,8 @@
 # "2" : The number is 100 or a number up to 1000 
 # "1" : The number is 10 or a number up to 100 
 # "0" : The number is 0 or a number up to 100 
-
-n = float(input())
+x = (input("Enter number\n")).strip()
+n = float(x)
 if n >= 1000:
     print("The number is equal to 1000 or is larger than 1000")
 elif n in range(100,1000):
