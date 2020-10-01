@@ -13,27 +13,26 @@
 # - "that is an acute triangle"
 # - "that is an obtuse triangle"
 import math
-
+#Input and sort
 a = float(input("Enter side A\n"))
 b = float(input("Enter side B\n"))
 c = float(input("Enter side C\n"))
-if a > b and a > c:
+if a >= b and a >= c:
     C = a
     B = b
     A = c
-if b > a and b > c:
+if b >= a and b >= c:
     C = b
     B = a
     A = c
-if c > b and c > a:
+if c >= b and c >= a:
     C = c
     B = b
     A = a
-print(A , B , C)
-#Right triangle
-s = 100 * ((math.sqrt(A**2 + B**2))/C)
-if int(s) in range (98,102):
+if int((100 * ((math.sqrt(A**2 + B**2))/C))) in range (98,102):
     print("that is a right triangle")
-#Obtuse triangle
-
-#Acute triangle
+else:
+    if (math.acos(((C**2) - (A**2) - (B**2)) / (-2 * A * B))) >(math.pi / 2):
+        print("that is an obtuse triangle")
+    else:
+        print("that is an acute triangle")
